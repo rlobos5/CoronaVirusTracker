@@ -44,7 +44,7 @@ public class VirusService {
         HttpRequest request = HttpRequest.newBuilder().uri(URI.create(VIRUS_DATA_SERVICE)).build();
         HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
         StringReader csvBodyReader = new StringReader(response.body());
-        Iterable<CSVRecord> records = CSVFormat.RFC4180.withFirstRecordAsHeader().parse(csvBodyReader);
+        Iterable<CSVRecord> records = CSVFormat.DEFAULT.withFirstRecordAsHeader().parse(csvBodyReader);
         for (CSVRecord record : records) {
             VirusInfo virusInfo = new VirusInfo();
             virusInfo.setCity(record.get("Admin2"));
