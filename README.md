@@ -9,8 +9,9 @@ To display updated records of confirmed Corona Virus cases in the US that is aut
 ## Built With
 - Java
 - Spring Boot 
-- HTML / Thymeleaf
+- HTML 
 - CSS
+- Thymeleaf
 
 ## Website Link
 https://corona-virus-tracker-5.herokuapp.com/
