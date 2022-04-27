@@ -9,7 +9,7 @@ To display updated records of confirmed Corona Virus cases in the US that is aut
 ## Built With
 - Java
 - Spring Boot 
--- HTML / Thymeleaf
+- HTML / Thymeleaf
 - CSS
 
 ## Website Link
